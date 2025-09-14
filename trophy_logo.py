@@ -7,7 +7,8 @@ draw = ImageDraw.Draw(img)
 cx = W // 2  
 
 
-logo = Image.open("86312.gif").convert("RGBA")  
+logo = Image.open("86312.gif").convert("RGBA")  # reminder Downloada ang 86312.gif para naay matawag na logo.
+                                                #arigatou gusaimas
 logo = logo.resize((500, 300))  
 lx, ly = logo.size
 img.paste(logo, (cx - lx // 2, 20), logo)  
@@ -53,4 +54,5 @@ output_path = "trophy_logo_with_himamat.png"
 img.save(output_path)
 img.show()
 print(f"✅ Saved as {output_path}")
+
 
